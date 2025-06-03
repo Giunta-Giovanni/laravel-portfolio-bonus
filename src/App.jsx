@@ -6,7 +6,7 @@ import ProjectLayout from "./layouts/ProjectLayout";
 
 // importiamo le pagine
 import HomePage from "./pages/HomePage";
-import ProjectPage from "./pages/ProjectPage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 export default function App() {
   return (
@@ -14,7 +14,9 @@ export default function App() {
       <Routes>
         <Route element={<ProjectLayout />}>
           <Route index path="/" element={<HomePage />} />
-          <Route path="/project/:id" element={<ProjectPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          {/* <Route path="/project/:id" element={<ProjectsPage />} /> */}
+
         </Route>
       </Routes>
     </BrowserRouter>
